@@ -10,6 +10,8 @@ import { ExperiencieComponent } from './components/experiencie/experiencie.compo
 import { ProjectsComponent } from './components/projects/projects.component';
 import { HttpClientModule} from  '@angular/common/http';
 import { RedesComponent } from './components/redes/redes.component';
+import { LoginComponent } from './components/login/login.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { RedesComponent } from './components/redes/redes.component';
     ExperiencieComponent,
     ProjectsComponent,
     RedesComponent,
+    LoginComponent,
+    FooterComponent,
   
   ],
   imports: [

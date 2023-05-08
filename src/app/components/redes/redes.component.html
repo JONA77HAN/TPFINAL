@@ -1,23 +1,123 @@
-<div class="container-fluid">
-<header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+<div class="container-fluid" id="inicioboton">
+  <header
+    class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
     <div class="col-md-3 mb-2 mb-md-0">
       <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
         <img src="../../../assets/arg-programa.png" alt="">
-        <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+        <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
       </a>
     </div>
 
-    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+    <ul class="nav col-10 col-md-auto mb-2 justify-content-center mb-md-0">
       <li><a href="https://wa.link/c3o53q" class="nav-link px-2 link-dark"> Whataspp</a></li>
       <li><a href="https://www.instagram.com/jona77han_carranza/" class="nav-link px-2 link-dark">Instagram</a></li>
       <li><a href="https://github.com/JONA77HAN" class="nav-link px-2 link-dark">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/jonathan-carranza-92189826a/" class="nav-link px-2 link-dark">Linkedin</a></li>
-     
-    </ul>
-
-    <div class="col-md-3 text-end">
-      <button type="button" class="btn btn-outline-dark me-2" onclick="">Login</button>
-      <button type="button" class="btn btn-dark">Sign-up</button>
+      <li><a href="https://www.linkedin.com/in/jonathan-carranza-92189826a/"
+          class="nav-link px-2 link-dark">Linkedin</a></li>
+</ul>
+<div class="col-md-4 text-end">
+      <button type="button" class="btn btn-outline-dark me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+      <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#registroModal">Sign-up</button>
     </div>
   </header>
 </div>
+
+
+
+ 
+  <!-- Carga los estilos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+
+<body>
+  <!-- Botón de inicio de sesión -->
+  
+
+  <!-- Modal de inicio de sesión -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="loginModalLabel">Iniciar sesión</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Formulario de inicio de sesión -->
+          <form>
+            <div class="mb-3">
+              <label for="inputEmail" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">No compartiremos tu correo electrónico con nadie más.</div>
+            </div>
+            <div class="mb-3">
+              <label for="inputPassword" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="inputPassword">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="rememberMe">
+              <label class="form-check-label" for="rememberMe">Recuérdame</label>
+            </div>
+            <button type="submit" class="btn btn-dark">Iniciar sesión</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carga los scripts de Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+</body>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  
+  <!-- Carga los estilos de Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+</head>
+<body>
+  <!-- Botón de registro -->
+
+
+  <!-- Ventana modal de registro -->
+  <div class="modal fade" id="registroModal" tabindex="-1" aria-labelledby="registroModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registroModalLabel">Registro de usuario</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="password" required>
+            </div>
+            <div class="mb-3">
+              <label for="confirmPassword" class="form-label">Confirmar contraseña</label>
+              <input type="password" class="form-control" id="confirmPassword" required>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-dark">Registrarse</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carga los scripts de Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
