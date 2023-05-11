@@ -1,6 +1,6 @@
 {
     "name": "Jonathan Carranza",
     "apellido": "Carranza",
-    "edad": 36
-
+    "edad": 36,
+    "backImage":"../../../assets/arg-programa.png"
 }

@@ -12,6 +12,7 @@ import { RedesComponent } from './components/redes/redes.component';
 import { LoginComponent } from './components/login/login.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule} from  '@angular/common/http';
+import { EducationComponent } from './components/education/education.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { HttpClientModule} from  '@angular/common/http';
     RedesComponent,
     LoginComponent,
     FooterComponent,
+    EducationComponent,
   
   ],
   imports: [
