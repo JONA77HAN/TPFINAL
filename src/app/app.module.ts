@@ -8,10 +8,10 @@ import { AboutComponent } from './components/about/about.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ExperiencieComponent } from './components/experiencie/experiencie.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { HttpClientModule} from  '@angular/common/http';
 import { RedesComponent } from './components/redes/redes.component';
 import { LoginComponent } from './components/login/login.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HttpClientModule} from  '@angular/common/http';
 
 @NgModule({
   declarations: [

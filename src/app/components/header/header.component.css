@@ -1,6 +1,8 @@
 #acercademi {
     display: flex;
     margin-left: 100px;
+    margin-top: -50px;
+    margin-bottom: -30px;
     justify-content: center;
     font-size: x-large;
     margin-right: 10px;
